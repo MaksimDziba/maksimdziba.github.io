@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Jade+Sass+SmartGrid_baseTemplate</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+  </head>
+  <body>
+    <!-- main header content-->
+    <header class="header">
+      <!-- preloader-->
+      <div class="preloader" id="preloader"></div>
+      <!-- header-top-->
+      <div class="header__inner section_dark">
+        <div class="wrapper">
+          <div class="header__top">
+            <nav class="menuAdditional">
+              <ul class="menuAdditional__list">
+                <li class="menuAdditional__item"><a class="menuAdditional__link" href="#">О компании</a></li>
+                <li class="menuAdditional__item"><a class="menuAdditional__link" href="#">Вакансии</a></li>
+                <li class="menuAdditional__item"><a class="menuAdditional__link" href="#">Лицензии</a></li>
+                <li class="menuAdditional__item"><a class="menuAdditional__link" href="#">Предложения</a></li>
+                <li class="menuAdditional__item"><a class="menuAdditional__link" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="speedtestBox"><a class="speedtestBox__link" href="http://beta.speedtest.net/ru" target="_blank"><i class="speedtestBox__icon icon-speed"></i>Проверка скорости</a></div>
+            <div class="authorizationBlock">
+              <div class="authorizationBlock__item"><a class="authorizationBlock__link authorizationBlock__link_connect popup-with-form" href="#registrationForm"><i class="authorizationBlock__icon icon-off"></i>Подключится</a></div>
+              <div class="authorizationBlock__item"><a class="authorizationBlock__link authorizationBlock__link_login popup-with-form" href="#connectForm"><i class="authorizationBlock__icon icon-user"></i>Личный кабинет</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header mobile menu-->
+      <div class="header__inner">
+        <div class="wrapper">
+          <div class="header__mobileMenu">
+            <button class="hamburger hamburger--spin" id="hamburger" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span><span class="hamburger-descr">Меню</span></button>
+            <nav class="hidden" id="mobile-menu"></nav>
+          </div>
+        </div>
+      </div>
+      <!-- header-bottom-->
+      <div class="header__inner">
+        <div class="wrapper">
+          <div class="header__bottom">
+            <div class="logoMain"><a class="logoMain__link" href="#"><img class="logoMain__img img-responsive" src="img/logo_b.png" alt="CyberTelecom"></a></div>
+            <div class="contactBox">
+              <h4 class="contactBox__title">адрес компании:</h4>
+              <ul class="contactBox__list">
+                <li class="contactBox__item">
+                  <p class="contactBox__address">г. Иваново, ул. Панина, д.22б</p>
+                </li>
+                <li class="socButtons"><a class="socButtons__link" href="/"><i class="socButtons__icon icon-facebook"></i></a><a class="socButtons__link" href="/"><i class="socButtons__icon icon-vkontakte"></i></a><a class="socButtons__link" href="/"><i class="socButtons__icon icon-twitter"></i></a></li>
+              </ul>
+            </div>
+            <div class="contactBox">
+              <h4 class="contactBox__title">время работы:</h4>
+              <ul class="contactBox__list">
+                <li class="contactBox__item">
+                  <p class="contactBox__timeWork">пн-пт c 9-00 - 18-00;</p>
+                  <p class="contactBox__timeWork">перерыв с 13-00 до 14-00</p>
+                  <p class="contactBox__timeWork">сб-вс выходной день.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="supportBox">
+              <h4 class="supportBox__title">служба технической поддержки:</h4>
+              <ul class="supportBox__list">
+                <li class="supportBox__item"><a class="supportBox__phone" href="callto:+7(4932)903010"><span class="supportBox__phone_smallBox"><i class="supportBox__icon icon-phone"></i>+7 (4932)</span> 90-30-10</a></li>
+                <li class="supportBox__item"><a class="supportBox__email" href="mailto:f1@cyber-tel.ru"><span class="supportBox__email_smallBox"><i class="supportBox__icon icon-mail"></i>E-mail:</span>  f1@cyber-tel.ru</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main-menu-->
+      <div class="header__inner header__inner_separated">
+        <div class="wrapper">
+          <div class="mainMenuBox">
+            <nav class="mainMenu">
+              <ul class="mainMenu__list sf-menu">
+                <li class="mainMenu__item active"><a class="mainMenu__link"><i class="mainMenu__icon icon-globe-1"></i>Интернет</a>
+                  <ul class="mainMenu__subList">
+                    <li class="mainMenu__subListItem"><a class="mainMenu__subListLink" href="#">Интернет для частного дома</a></li>
+                    <li class="mainMenu__subListItem"><a class="mainMenu__subListLink" href="#">Интернет для квартиры</a></li>
+                    <li class="mainMenu__subListItem"><a class="mainMenu__subListLink" href="#">Интернет для бизнеса</a></li>
+                  </ul>
+                </li>
+                <li class="mainMenu__item"><a class="mainMenu__link"><i class="mainMenu__icon icon-desktop"></i>Телевидение</a>
+                  <ul class="mainMenu__subList">
+                    <li class="mainMenu__subListItem"><a class="mainMenu__subListLink" href="#">Цифровое</a></li>
+                    <li class="mainMenu__subListItem"><a class="mainMenu__subListLink" href="#">Спутниковое</a></li>
+                  </ul>
+                </li>
+                <li class="mainMenu__item"><a class="mainMenu__link" href="#"><i class="mainMenu__icon icon-cog-alt"></i>Услуги</a></li>
+                <li class="mainMenu__item"><a class="mainMenu__link" href="#"><i class="mainMenu__icon icon-gift-1"></i>Акции</a></li>
+                <li class="mainMenu__item"><a class="mainMenu__link" href="#"><i class="mainMenu__icon icon-newspaper"></i>Новости</a></li>
+                <li class="mainMenu__item"><a class="mainMenu__link" href="#"><i class="mainMenu__icon icon-users"></i>Абонентам</a></li>
+                <li class="mainMenu__item"><a class="mainMenu__link" href="#"><i class="mainMenu__icon icon-credit-card"></i>Оплата</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- main-slider-->
+      <div class="header__inner section_grey">
+        <div class="wrapper section_nopadding">
+          <div class="headerSliderBox">
+            <div class="mainSlider fade">
+              <!-- slider item-->
+              <div class="mainSlider__item">
+                <div class="mainSlider__image"><img class="img-responsive" src="img/slider/Slayder_1-920x322.jpg" alt="кибер телеком"></div>
+                <div class="mainSlider__offer mainSlider__offer_green">
+                  <h3 class="mainSlider__title">Акция<span class="mainSlider__slogan">"Антикризис"</span><br/> для юридических лиц</h3>
+                  <p class="mainSlider__descript">
+                    "Мы предложим интернет дешевле и<br/> быстрей</p><a class="button button_green" href="#">Подробнее</a>
+                </div>
+              </div>
+              <!-- slider item-->
+              <div class="mainSlider__item">
+                <div class="mainSlider__image"><img class="img-responsive" src="img/slider/Slayder_2-920x322.jpg" alt="кибер телеком"></div>
+                <div class="mainSlider__offer mainSlider__offer_blue">
+                  <h3 class="mainSlider__title">Акция<span class="mainSlider__slogan">"Антикризис"</span><br/> для юридических лиц</h3>
+                  <p class="mainSlider__descript">
+                    "Мы предложим интернет дешевле и<br/> быстрей</p><a class="button button_blue" href="#">Подробнее</a>
+                </div>
+              </div>
+              <!-- slider item-->
+              <div class="mainSlider__item">
+                <div class="mainSlider__image"><img class="img-responsive" src="img/slider/Slayder_3-920x322.jpg" alt="кибер телеком"></div>
+                <div class="mainSlider__offer mainSlider__offer_accent">
+                  <h3 class="mainSlider__title">Акция<span class="mainSlider__slogan">"Антикризис"</span><br/> для юридических лиц</h3>
+                  <p class="mainSlider__descript">
+                    "Мы предложим интернет дешевле и<br/> быстрей</p><a class="button button_accent" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- sectinService-->
+    <section class="section sectionService">
+      <div class="wrapper">
+        <div class="sectionService-list">
+              <!-- article_small-->
+              <article class="sectionService-article sectionService-article_small"><a class="sectionService-box" href="#"><span class="sectionService-box__picture"><img class="img-responsive" src="img/items/sity-phone.jpg" alt="городской телефон"></span><span class="sectionService-box__title">городской телефон</span><span class="sectionService-box__descr">Подключение услуги в любом месте</span><span class="sectionService-box__line sectionService-box__line_green"></span></a></article>
+              <!-- article_small-->
+              <article class="sectionService-article sectionService-article_small"><a class="sectionService-box" href="#"><span class="sectionService-box__picture"><img class="img-responsive" src="img/items/tv.jpg" alt="Цифровое телевидение"></span><span class="sectionService-box__title">Цифровое телевидение</span><span class="sectionService-box__descr">Десятки каналов в цифровом качестве</span><span class="sectionService-box__line sectionService-box__line_blue"></span></a></article>
+              <!-- article_small-->
+              <article class="sectionService-article sectionService-article_small"><a class="sectionService-box" href="#"><span class="sectionService-box__picture"><img class="img-responsive" src="img/items/internet.jpg" alt="городской телефон"></span><span class="sectionService-box__title">городской телефон</span><span class="sectionService-box__descr">Быстрый интернет по доступной цене</span><span class="sectionService-box__line sectionService-box__line_accent"></span></a></article>
+              <!-- article medium-->
+              <article class="sectionService-article sectionService-article_medium"><a class="sectionService-box" href="#"><span class="sectionService-box__picture"><img class="img-responsive" src="img/items/internet-chastniy-dom.jpg" alt="Интернет для частного дома"></span><span class="sectionService-box__title sectionService-box__title_blue"><i class="icon icon-home-1"></i>Интернет для частного дома</span></a></article>
+              <!-- article medium-->
+              <article class="sectionService-article sectionService-article_medium"><a class="sectionService-box" href="#"><span class="sectionService-box__picture"><img class="img-responsive" src="img/items/internet-kvartira.jpg" alt="Интернет для квартиры"></span><span class="sectionService-box__title sectionService-box__title_green"><i class="icon icon-home-1"></i>Интернет для квартиры</span></a></article>
+              <!-- article large-->
+              <article class="sectionService-article sectionService-article_large"><a class="sectionService-box" href="#"><span class="sectionService-box__picture"><img class="img-responsive" src="img/items/internet.-buzines.jpg" alt="Интернет для бизнеса"></span><span class="sectionService-box__title sectionService-box__title_accent"><i class="icon icon-home-1"></i>Интернет для бизнеса</span></a></article>
+        </div>
+      </div>
+    </section>
+    <!-- sectionWork-->
+    <section class="section sectionWork section_grey">
+      <div class="wrapper">
+        <div class="sectionWork-list">
+              <!-- article work item-->
+              <article class="sectionWork-item"><a class="sectionWork-box" href="#"><span class="sectionWork-box__picture"><img class="img-responsive" src="img/icon/d1.png" alt="удаленное видеонаблюдение"></span>
+                  <h2 class="sectionWork-box__title">удаленное видеонаблюдение</h2>
+                  <p class="sectionWork-box__descr">Будет всегда в курсе</p><span class="sectionWork-box__bottom-line sectionWork-box__bottom-line_green"></span></a></article>
+              <!-- article work item-->
+              <article class="sectionWork-item"><a class="sectionWork-box" href="#"><span class="sectionWork-box__picture"><img class="img-responsive" src="img/icon/d2.png" alt="аренда серверов"></span>
+                  <h2 class="sectionWork-box__title">аренда серверов</h2>
+                  <p class="sectionWork-box__descr">Услуги дата-центра</p><span class="sectionWork-box__bottom-line sectionWork-box__bottom-line_accent"></span></a></article>
+              <!-- article work item-->
+              <article class="sectionWork-item"><a class="sectionWork-box" href="#"><span class="sectionWork-box__picture"><img class="img-responsive" src="img/icon/d3.png" alt="монтаж сетей"></span>
+                  <h2 class="sectionWork-box__title">монтаж сетей</h2>
+                  <p class="sectionWork-box__descr">Будет всегда в курсе</p><span class="sectionWork-box__bottom-line sectionWork-box__bottom-line_blue"></span></a></article>
+              <!-- article work item-->
+              <article class="sectionWork-item"><a class="sectionWork-box" href="#"><span class="sectionWork-box__picture"><img class="img-responsive" src="img/icon/d4.png" alt="обслуживание компьтеров"></span>
+                  <h2 class="sectionWork-box__title">обслуживание компьтеров</h2>
+                  <p class="sectionWork-box__descr">Наши инженеры Вам помогут</p><span class="sectionWork-box__bottom-line sectionWork-box__bottom-line_green"></span></a></article>
+              <!-- article work item-->
+              <article class="sectionWork-item"><a class="sectionWork-box" href="#"><span class="sectionWork-box__picture"><img class="img-responsive" src="img/icon/d5.png" alt="поставки оборудования"></span>
+                  <h2 class="sectionWork-box__title">поставки оборудования</h2>
+                  <p class="sectionWork-box__descr">Компьютерного и переферийного</p><span class="sectionWork-box__bottom-line sectionWork-box__bottom-line_accent"></span></a></article>
+              <!-- article work item-->
+              <article class="sectionWork-item"><a class="sectionWork-box" href="#"><span class="sectionWork-box__picture"><img class="img-responsive" src="img/icon/d6.png" alt="глонасс мониторинг"></span>
+                  <h2 class="sectionWork-box__title">глонасс мониторинг</h2>
+                  <p class="sectionWork-box__descr">Контроль транспорта и персонала</p><span class="sectionWork-box__bottom-line sectionWork-box__bottom-line_blue"></span></a></article>
+        </div>
+      </div>
+    </section>
+    <!-- sectionOffer-->
+    <section class="section sectionCompany">
+      <div class="wrapper">
+        <div class="sectionCompany__item">
+          <h3 class="sectionCompany__header">Собственнику недвижимости:</h3>
+          <p class="sectionCompany__descr">Компания Кибер-Телеком предлагает выгодные условия взаимодействия:</p>
+          <div class="responsiveTabs" id="responsiveTabs">
+            <ul class="responsiveTabs__list">
+              <li class="responsiveTabs__item"><a class="responsiveTabs__link icon responsiveTabs__link_blue" href="#tab-1">Застройщикам</a></li>
+              <li class="responsiveTabs__item"><a class="responsiveTabs__link responsiveTabs__link_accent" href="#tab-2">Управляющим компаниям</a></li>
+              <li class="responsiveTabs__item"><a class="responsiveTabs__link responsiveTabs__link_green" href="#tab-3">Собственникам жилья</a></li>
+            </ul>
+            <div class="responsiveTabs__contentItem" id="tab-1">
+              <p class="responsiveTabs__contentDescr">Реализуем на объектах коммерческой недвижимости телекоммуникационные проекты различной сложности. Застройщикам и владельцам объектов коммерческой недвижимости мы предлагаем любые формы сотрудничества: от проектирования структурированной кабельной сети объекта до предоставления услуг в качестве телеком-оператора.</p>
+            </div>
+            <div class="responsiveTabs__contentItem" id="tab-2">
+              <p class="responsiveTabs__contentDescr">Мы предоставляем услуги в ваших зданиях и помещениях вы получаете % от платежей при этом большую часть расходов по подключению телекоммуникаций компания Кибер-Телеком берет на себя! А для конечных клиентов мы прелагаем надежные телекоммуникационные услуги ИНТЕРНТЕ, ТЕЛЕФОНИЯ, ТЕЛЕВИДЕНИЕ.</p>
+            </div>
+            <div class="responsiveTabs__contentItem" id="tab-3">
+              <p class="responsiveTabs__contentDescr">Предоставляем комплексные телекоммуникационные решения для объектов коммерческой недвижимости различного целевого назначения с 2008 г. Мы успешно сотрудничаем с активными представителями данной отрасли в Иваново и области. Наша компания готова провести необходимые консультации и реализовать совместные проекты на любом этапе.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section-->
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footerItems">
+          <div class="footerBox-logo"><a class="footerBox-logo__img" href="#"><img src="img/logo_b.png" alt="КиберТелеком"></a>
+            <ul class="footerBox-logo__list">Остались вопросы?
+              <li class="footerBox-logo__list-item"><span>Подключение:</span><a href="#"></a>+7 4932 48-47-48</li>
+              <li class="footerBox-logo__list-item"><span>Тех.пддержка:</span><a href="#"></a>+7 4932 90-30-10</li>
+              <li class="footerBox-logo__list-item"><span>Мы в соц.сетях:</span><a href="#"><i class="icon icon-facebook"></i></a><a href="#"><i class="icon icon-vkontakte"></i></a><a href="#"><i class="icon icon-twitter"></i></a></li>
+            </ul>
+          </div>
+          <nav class="footerBox-menu">
+            <ul class="footerBox-menu__list">
+              <h4 class="footerBox-menu__list-title footerBox-menu__list-title_green">Частным клиентам</h4>
+              <li class="footerBox-menu__list-item"><a href="#">Интернет в частный дом</a></li>
+              <li class="footerBox-menu__list-item"><a href="#">Интернет в квартиру</a></li>
+              <li class="footerBox-menu__list-item"><a href="#">Телевидение</a></li>
+              <li class="footerBox-menu__list-item"><a href="#">Помощь</a></li>
+            </ul>
+          </nav>
+          <nav class="footerBox-menu">
+            <ul class="footerBox-menu__list">
+              <h4 class="footerBox-menu__list-title footerBox-menu__list-title_accent">Юридическим лицам</h4>
+              <li class="footerBox-menu__list-item"><a href="#">Аренда серверов</a></li>
+              <li class="footerBox-menu__list-item"><a href="#">Услуги Дата-цетра</a></li>
+              <li class="footerBox-menu__list-item"><a href="#">Видеонаблюдение</a></li>
+              <li class="footerBox-menu__list-item"><a href="#">Интернет для бизнеса</a></li>
+            </ul>
+          </nav>
+          <nav class="footerBox-menu">
+            <ul class="footerBox-menu__list">
+              <h4 class="footerBox-menu__list-title footerBox-menu__list-title_blue">Компания</h4>
+              <li class="footerBox-menu__list-item"><a href="#">О компании</a></li>
+              <li class="footerBox-menu__list-item"><a href="#">Ваканисии</a></li>
+              <li class="footerBox-menu__list-item"><a href="#">Лицензии</a></li>
+              <li class="footerBox-menu__list-item"><a href="#">Партнеры</a></li>
+              <li class="footerBox-menu__list-item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="copyrightBox">
+          <div class="copyrightBox__item"><a class="copyrightBox__siteMap" href="/">Карта сайта</a></div>
+          <div class="copyrightBox__item"><a class="copyrightBox__siteUp" href="javascript:void(0);"></a></div><a class="copyrightBox__policyItem" href="#">Условия использования и политика конфиденциальности</a><a class="copyrightBox__policyItem" href="#">&copy; КИБЕРТЕЛЕКОМ 2017</a>
+        </div>
+      </div>
+    </footer>
+    <div class="hiddenForm">
+      <form class="connectForm white-popup-block mfp-hide" id="connectForm">
+        <h3 class="connectForm__title">Вход в личный кабинет</h3>
+        <fieldset class="connectForm__fields">
+          <ol class="connectForm__list">
+            <li class="connectForm__item">
+              <label class="input__label" for="login-name">Номер лицевого счета</label>
+              <input class="input__field" id="login-name" name="login-name" type="text" required="">
+            </li>
+            <li class="connectForm__item">
+              <label class="input__label" for="password">Пароль</label>
+              <input class="input__field" id="password" name="password" type="password" required="">
+            </li>
+            <li class="connectForm__item">
+              <button class="input__button" type="submit">Вход</button>
+            </li>
+            <li class="connectForm__item">
+              <button class="input__button_simple" type="submit">Востановление доступа</button>
+            </li>
+          </ol>
+        </fieldset>
+      </form>
+      <form class="registrationForm mfp-hide white-popup-block form-success" id="registrationForm">
+        <div class="registrationForm__success">
+          <p>Спасибо</p>
+        </div>
+        <h3 class="registrationForm__title">Регистрация</h3>
+        <p class="registrationForm__descr">Заполните форму и постараемся ответиь вам в ближайшее время</p>
+        <form class="registrationForm__fields">
+          <!-- Hidden Required Fields-->
+          <input type="hidden" name="project_name" value="Cyber-tel.ru">
+          <input type="hidden" name="admin_email" value="cyber-tel@yandex.ru">
+          <input type="hidden" name="form_subject" value="Заказать звонок">
+          <input type="hidden" name="data" value="Заказать звонок - top-line">
+          <!-- END Hidden Required Fields-->
+          <div class="registrationForm__grid">
+            <input class="registrationForm__input text" id="name" placeholder="Имя" name="Name" value=" Имя" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Имя';}" type="text">
+            <input class="registrationForm__input text" placeholder="Телефон" name="Telefon" value="Телефон" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Телефон';}" type="text" required>
+            <button class="registrationForm__button">Отправить</button>
+          </div>
+        </form>
+      </form>
+    </div>
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
